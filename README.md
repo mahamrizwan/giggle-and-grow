@@ -1,16 +1,54 @@
-# nwproject
+# Giggle & Grow 🌱
 
-A new Flutter project.
+A Flutter mobile app for young children that makes learning fun through lessons, games, stories and drawing. Built as a Mobile Application Development course project.
+
+## Features
+
+- **Authentication:** sign up, login and password reset (Firebase Auth)
+- **Onboarding:** splash screen and a short intro walkthrough
+- **Learning:** alphabet, numbers, animal sounds and shapes, with audio
+- **Games:** memory match, color match and sun puzzle
+- **Stories:** illustrated stories (The Brave Little Fox, A Day at the Beach, The Star's Best Friend, The Silly Rainbow)
+- **Drawing:** a canvas to draw and save artwork (Cloud Firestore)
+- **Rewards:** points and score tracking on the home dashboard 
+
+## Tech Stack
+
+- Flutter / Dart
+- Firebase Authentication and Cloud Firestore
+- Provider (state management)
+- audioplayers, flutter_svg, dotted_border
+
+## Project Structure
+
+Feature-based, with a clean-architecture layout (presentation / domain / data):
+
+```
+lib/
+├── core/          # constants, colors, utils
+├── features/
+│   ├── authentication/
+│   ├── onboarding/
+│   ├── dashboard/
+│   ├── learning/
+│   ├── games/
+│   ├── drawing/
+│   └── stories/
+├── widgets/       # shared widgets (bottom navbar)
+└── main.dart
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+**Prerequisites:** Flutter SDK (Dart ^3.10.7), Android Studio, an emulator or Android device.
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+git clone https://github.com/YOURUSER/giggle-and-grow.git
+cd giggle-and-grow
+flutter pub get
+flutter run
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**Firebase:** the app uses Firebase Auth and Firestore. To use your own project, run `flutterfire configure` and enable Email/Password sign-in in the Firebase console.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ 
