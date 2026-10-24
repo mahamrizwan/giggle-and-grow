@@ -10,7 +10,7 @@ A Flutter mobile app for young children that makes learning fun through lessons,
 - **Games:** memory match, color match and sun puzzle
 - **Stories:** illustrated stories (The Brave Little Fox, A Day at the Beach, The Star's Best Friend, The Silly Rainbow)
 - **Drawing:** a canvas to draw and save artwork (Cloud Firestore)
-- **Rewards:** points and score tracking on the home dashboard 
+- **Rewards:** points and score tracking on the home dashboard
 
 ## Tech Stack
 
@@ -40,15 +40,25 @@ lib/
 
 ## Getting Started
 
-**Prerequisites:** Flutter SDK (Dart ^3.10.7), Android Studio, an emulator or Android device.
+**Prerequisites:** Flutter SDK (Dart ^3.10.7), Android Studio, and an emulator or Android device.
 
 ```bash
-git clone https://github.com/YOURUSER/giggle-and-grow.git
+git clone https://github.com/mahamrizwan/giggle-and-grow.git
 cd giggle-and-grow
 flutter pub get
 flutter run
 ```
 
-**Firebase:** the app uses Firebase Auth and Firestore. To use your own project, run `flutterfire configure` and enable Email/Password sign-in in the Firebase console.
+**Firebase:** the app uses Firebase Auth and Firestore. To use your own Firebase project, run `flutterfire configure` and enable Email/Password sign-in in the Firebase console.
 
- 
+## Known Limitations
+
+- Requires an internet connection for login and saving scores/drawings
+- Tested on Android only
+
+## Authors
+
+- Maham Rizwan
+- Mubashra Noor
+- Pariza Nadir
+- Mahnoor Omar
